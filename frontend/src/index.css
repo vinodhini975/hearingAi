@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F7F8F6] text-[#1C2421] antialiased selection:bg-[#176B68] selection:text-white overflow-x-hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Premium Audicus-Inspired White Cards */
+.card-premium {
+  background: #FFFFFF;
+  border: 1px solid #DDE5E1;
+  box-shadow: 0 4px 20px rgba(20, 40, 35, 0.03);
+  border-radius: 16px;
+}
+
+.card-premium-hover:hover {
+  border-color: #176B68;
+  box-shadow: 0 8px 30px rgba(23, 107, 104, 0.06);
+  transition: all 0.25s ease-out;
+}
+
+/* Subtle Activity Indicators */
+@keyframes bar-bounce {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1.1); }
+}
+
+.animate-bar-1 { animation: bar-bounce 0.8s ease-in-out infinite; }
+.animate-bar-2 { animation: bar-bounce 0.8s ease-in-out infinite 0.15s; }
+.animate-bar-3 { animation: bar-bounce 0.8s ease-in-out infinite 0.3s; }
+
+/* Custom light-theme range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #DDE5E1;
+  height: 6px;
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #176B68;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 2px 6px rgba(23, 107, 104, 0.2);
+  cursor: pointer;
+  transition: transform 0.1s ease-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #125754;
+}
+
+/* Print Stylesheet override */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+  }
+  .non-printable {
+    display: none !important;
+  }
+  .printable-report {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .card-premium {
+    background: white !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    color: black !important;
+  }
+  text {
+    fill: black !important;
+  }
+  line {
+    stroke: #cbd5e1 !important;
+  }
+}

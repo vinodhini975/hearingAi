@@ -1,0 +1,53 @@
+{
+  "patient_id": "PT-2026-001",
+  "patient_name": "Somya singh",
+  "age": 32,
+  "operator": "Dr. S. Sharma, Au.D.",
+  "timestamp": "2026-10-27T13:53:35.508704",
+  "transducer": "Sennheiser_HDA200",
+  "calibration_profile": "Sennheiser_HDA200",
+  "tests": {
+    "pure_tone": {
+      "right": {
+        "AC": {
+          "1000": -10.0
+        },
+        "BC": {},
+        "AC_masked": {},
+        "BC_masked": {}
+      },
+      "left": {
+        "AC": {
+          "1000": 43.0
+        },
+        "BC": {},
+        "AC_masked": {},
+        "BC_masked": {}
+      }
+    },
+    "speech": {
+      "right": {
+        "SRT": null,
+        "WRS": null
+      },
+      "left": {
+        "SRT": null,
+        "WRS": null
+      }
+    }
+  },
+  "speech": {
+    "right": {
+      "SRT": null,
+      "WRS": null
+    },
+    "left": {
+      "SRT": null,
+      "WRS": null
+    }
+  },
+  "ambient_noise_spl": 55.70000076293945,
+  "patient_reliability": 1.0,
+  "ai_analysis": {},
+  "last_auto_save": "2026-10-27T14:20:21.287745"
+}

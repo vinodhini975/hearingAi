@@ -1,0 +1,58 @@
+{
+  "ac_only_model": {
+    "features": [
+      "AC_250",
+      "AC_500",
+      "AC_1000",
+      "AC_2000",
+      "AC_4000",
+      "AC_8000",
+      "AC_slope_low_high",
+      "AC_slope_500_2000",
+      "AC_range",
+      "AC_std",
+      "age",
+      "ear_discharge_history",
+      "noise_exposure_history"
+    ],
+    "classes": [
+      "Conductive",
+      "Mixed",
+      "Normal",
+      "Sensorineural"
+    ],
+    "test_accuracy": 0.9944,
+    "algorithm": "RandomForestClassifier",
+    "rejection_threshold": 0.7
+  },
+  "full_model": {
+    "features": [
+      "AC_250",
+      "AC_500",
+      "AC_1000",
+      "AC_2000",
+      "AC_4000",
+      "AC_8000",
+      "BC_250",
+      "BC_500",
+      "BC_1000",
+      "BC_2000",
+      "BC_4000",
+      "BC_8000",
+      "ABG_250",
+      "ABG_500",
+      "ABG_1000",
+      "ABG_2000",
+      "ABG_4000",
+      "ABG_8000"
+    ],
+    "classes": [
+      "Conductive",
+      "Mixed",
+      "Normal",
+      "Sensorineural"
+    ],
+    "test_accuracy": 1.0,
+    "algorithm": "RandomForestClassifier"
+  }
+}

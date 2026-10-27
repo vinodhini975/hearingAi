@@ -1,0 +1,16 @@
+{
+  "name": "hearing-screening-parent",
+  "version": "1.0.0",
+  "description": "Parent scripts for running AI-Based Remote Hearing Screening and Preliminary Assessment tool",
+  "scripts": {
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
